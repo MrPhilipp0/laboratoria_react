@@ -1,0 +1,48 @@
+@import "breakpoints";
+
+:host {
+  box-shadow: 7px 7px 14px -11px rgba(66, 68, 90, 1);
+  display: block;
+  position: fixed;
+  background-color: white;
+  border-radius: 0 8px 8px 0;
+  width: 100px;
+  min-height: 100vh;
+  height: auto;
+
+  @media (min-width: $screen-960) {
+    width: 260px;
+  }
+}
+
+.sidebar {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  @media (min-width: $screen-960) {
+    display: flex;
+  }
+
+  img {
+    width: 100%;
+    padding: 8px 4px;
+  }
+}
+
+.mini-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  @media (min-width: $screen-960) {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    padding: 8px 0;
+  }
+}

@@ -1,0 +1,15 @@
+@import "styles";
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: $primary-color;
+  border-radius: 8px;
+
+  img {
+    width: 100%;
+    padding: 0;
+  }
+}

@@ -1,0 +1,14 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 7px 7px 14px -11px rgba(66, 68, 90, 1);
+  border-radius: 8px;
+  width: 100%;
+
+  img {
+    width: auto;
+    width: 90%;
+  }
+}
