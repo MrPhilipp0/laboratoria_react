@@ -1,0 +1,44 @@
+<ng-container *ngIf="fontSize$ | async as fontSize">
+  <span
+    [class.font-active]="fontSize === 'small'"
+    [style.font-size]="'12px'"
+    (click)="setFontSize('small')"
+  >
+    A
+  </span>
+  <span
+    [class.font-active]="fontSize === 'medium'"
+    [style.font-size]="'16px'"
+    (click)="setFontSize('medium')"
+  >
+    A
+  </span>
+  <span
+    [class.font-active]="fontSize === 'large'"
+    [style.font-size]="'20px'"
+    (click)="setFontSize('large')"
+  >
+    A
+  </span>
+</ng-container>
+
+<ng-container *ngIf="colorMode$ | async as colorMode">
+  <div class="img-wrapper">
+    <img
+      src="https://static.thenounproject.com/png/4808961-200.png"
+      alt="light"
+      [class.img-active]="colorMode === 'light'"
+      (click)="setColorMode('light')"
+    />
+  </div>
+  <div class="img-wrapper">
+    <img
+      src="https://icons.veryicon.com/png/o/commerce-shopping/small-icons-with-highlights/night-mode-1.png"
+      alt="night"
+      [class.img-active]="colorMode === 'night'"
+      (click)="setColorMode('night')"
+    />
+  </div>
+</ng-container>
+
+<span>{{ colorMode$ | async }}</span>

@@ -1,0 +1,15 @@
+@import "breakpoints";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px auto;
+
+  @media (min-width: $screen-960) {
+    grid-template-columns: 260px auto;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}

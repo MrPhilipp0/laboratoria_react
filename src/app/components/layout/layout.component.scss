@@ -6,11 +6,6 @@
   background-color: rgba(245, 245, 245, 1);
   width: 100%;
   height: 100vh;
-  margin-left: 100px;
-
-  @media (min-width: $screen-960) {
-    margin-left: 260px;
-  }
 }
 
 .sections {
@@ -23,72 +18,40 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      "hello hello"
-      "profit profit"
-      "total total"
-      "total total"
+      "banner banner"
+      "watchlist watchlist"
       "sales sales"
-      "payments payments"
-      "transactions transactions"
-      "settings settings";
+      "sales sales"
+      "speed speed"
+      "energy energy"
+      "newsletter newsletter"
+      "music music";
   }
 
   @media (min-width: $screen-720) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "hello hello profit"
-      "total total sales"
-      "total total payments"
-      "transactions transactions ."
-      "settings settings .";
+      "banner banner watchlist"
+      "sales sales speed"
+      "sales sales energy"
+      "newsletter newsletter ."
+      "music music .";
   }
 
   @media (min-width: $screen-960) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      "hello hello hello profit"
-      "total total sales payments"
-      "total total sales payments"
-      "transactions transactions transactions settings";
-  }
-
-  div {
-    display: block;
-    background-color: white;
-    box-shadow: 7px 7px 14px -11px rgba(66, 68, 90, 1);
-    border-radius: 8px;
-    min-height: 100px;
+      "banner banner banner watchlist"
+      "sales sales speed energy"
+      "sales sales speed energy"
+      "newsletter newsletter newsletter music";
   }
 }
 
-.hello {
-  grid-area: hello;
-}
-
-.profit {
-  grid-area: profit;
-}
-
-.sales {
-  grid-area: sales;
-}
-
-.total {
-  grid-area: total;
-}
-
-.payments {
-  grid-area: payments;
-}
-
-.transactions {
-  grid-area: transactions;
-}
-
-.profile {
-  grid-area: profile;
-}
-
-.settings {
-  grid-area: settings;
+.box {
+  display: block;
+  background-color: white;
+  box-shadow: 7px 7px 14px -11px rgba(66, 68, 90, 1);
+  border-radius: 8px;
+  min-height: 100px;
 }
