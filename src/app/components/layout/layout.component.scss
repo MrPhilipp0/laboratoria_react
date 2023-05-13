@@ -1,15 +1,14 @@
 @import "breakpoints";
+@import "styles";
 
 :host {
   display: block;
-  padding: 16px;
-  background-color: rgba(245, 245, 245, 1);
+  padding: 0 16px;
+  background-color: $background-color;
   width: 100%;
-  height: 100vh;
 }
 
 .sections {
-  margin-top: 16px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -50,7 +49,7 @@
 
 .box {
   display: block;
-  background-color: white;
+  background-color: $background-color2;
   box-shadow: 7px 7px 14px -11px rgba(66, 68, 90, 1);
   border-radius: 8px;
   min-height: 100px;

@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div class="title">
+
+  </div>
+  <div class="navigation">
+    <a
+      *ngFor="let route of ROUTER_CONFIG"
+      [routerLink]="[route.url]"
+      routerLinkActive="active-link"
+      class="item"
+    >
+      <span class="material-icons">{{ route.image }}</span>
+      <span>{{ route.name }}</span>
+    </a>
+  </div>
+  <div class="user-settings">
+
+  </div>
+</div>

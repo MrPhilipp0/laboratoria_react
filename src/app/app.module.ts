@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LeftBarModule } from './components/left-bar/left-bar.module';
 import { UserSettingsModule } from './components/user-settings/user-settings.module';
+import { NavigationModule } from './components/navigation/navigation.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { UserSettingsModule } from './components/user-settings/user-settings.mod
     BrowserModule,
     AppRoutingModule,
     LeftBarModule,
+    NavigationModule,
     UserSettingsModule,
   ],
   providers: [],

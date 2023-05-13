@@ -20,6 +20,8 @@ export class UserSettingsService {
   }
 
   setColorMode(mode: ColorMode): void {
+    mode === 'light' && document.body.classList.remove('night')
+    mode === 'night' && document.body.classList.add('night')
     this.colorMode$.next(mode);
   }
 

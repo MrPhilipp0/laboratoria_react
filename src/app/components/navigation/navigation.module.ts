@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UserSettingsComponent } from './user-settings.component';
+import { NavigationComponent } from './navigation.component';
 import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
   declarations: [
-    UserSettingsComponent,
+    NavigationComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
   ],
   exports: [
-    UserSettingsComponent,
+    NavigationComponent,
   ]
 })
-export class UserSettingsModule { }
+export class NavigationModule { }

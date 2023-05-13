@@ -1,4 +1,7 @@
-<ng-container *ngIf="fontSize$ | async as fontSize">
+<ng-container *ngIf="{fontSize: fontSize$ | async, colorMode: colorMode$ | async} as settings">
+  <div [class]="settings.fontSize">asdasd</div>
 
+  <span class="material-icons">event</span>
 </ng-container>
-<div>asdasd</div>
+
+<app-navigation />
